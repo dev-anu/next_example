@@ -4,7 +4,7 @@ const OwlCarousel = dynamic(import("react-owl-carousel"), {
   ssr: false,
 });
 import "../../styles/globals.css";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import CarSide from "./CarSide";
 import BrandSide from "./BrandSide";
 
@@ -33,8 +33,6 @@ const settings = {
   },
 };
 function Tabmenu() {
-  const counterEl = useRef(null);
-  const first = useRef(null);
   const [select, setSelect] = useState(0);
   const handleSelect = (input) => {
     if (input === "cars") {
@@ -44,6 +42,8 @@ function Tabmenu() {
       setSelect(1);
     }
   };
+  const link = select === 0 ? "nav-link active" : "nav-link";
+  const link1 = select === 1 ? "nav-link active" : "nav-link";
   return (
     <div>
       <div className="bsliderpart">
@@ -53,7 +53,7 @@ function Tabmenu() {
         <ul className="nav nav-tabs" id="myTab">
           <li className="nav-item">
             <a
-              className="nav-link active"
+              className={link}
               id="cars-tab"
               data-bs-toggle="tab"
               onClick={() => handleSelect("cars")}
@@ -64,7 +64,7 @@ function Tabmenu() {
           <li className="nav-item">
             <a
               htmlfor="brands"
-              className="nav-link"
+              className={link1}
               id="brands-tab"
               data-bs-toggle="tab"
               onClick={() => handleSelect("brands")}

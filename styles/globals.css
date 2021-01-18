@@ -279,6 +279,8 @@ header .htext {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  position: relative;
+  z-index: 10;
 }
 .bsliderpart .nav-tabs .nav-item.show .nav-link,
 .bsliderpart .nav-tabs .nav-link.active {
