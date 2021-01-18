@@ -1,0 +1,187 @@
+.mobilemenu {
+  display: none;
+}
+@media only screen and (max-width: 1599px) {
+  .searchbar {
+    padding-right: 80px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .searchbar {
+    right: 60px;
+    left: 60px;
+  }
+  .bsliderpart {
+    left: 60px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  header {
+    padding: 20px 25px;
+  }
+  .searchbar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  header .htext {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+  .rheader a {
+    width: 175px;
+  }
+  .searchbar {
+    right: 25px;
+    left: 25px;
+  }
+  .searchbar .fieldrow .custfield {
+    width: 100% !important;
+  }
+  .searchbar .fieldrow .sbtn {
+    margin-top: 15px;
+  }
+  .searchbar .fieldrow .extfilter {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .bsliderpart {
+    left: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 20px 30px;
+  }
+  header .htext,
+  .rheader .cbtn {
+    display: none;
+  }
+  .rheader a {
+    width: 76px;
+    height: 26px;
+  }
+  .rheader .ingbtn {
+    font-size: 12px;
+    line-height: 26px;
+    background-color: #1db95c;
+    color: #fff;
+  }
+  header .logo a img {
+    width: 70px;
+  }
+  .mobilemenu {
+    display: inline-block;
+    margin: 3px 22px 0 0;
+    float: left;
+    width: 21px;
+    height: 14px;
+    background: url(/images/menu-icon.svg) no-repeat 0 0;
+    cursor: pointer;
+  }
+  .searchbar {
+    right: 15px;
+    left: 15px;
+    padding: 20px 16px;
+    top: 84px;
+  }
+  .searchbar h3 {
+    font-size: 16px;
+    margin-bottom: 13px;
+    line-height: 19px;
+  }
+  .searchbar .fieldrow .custfield {
+    height: 48px;
+    background-size: 19px auto;
+    background-position: 12px 50%;
+    padding-left: 44px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  ::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  :-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  :-moz-placeholder {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .searchbar .fieldrow .sbtn {
+    width: 76px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  .searchbar .fieldrow .extfilter {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background-size: 16px auto;
+    padding: 0;
+  }
+  .searchbar .fieldrow .extfilter {
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+  .chatbtn {
+    right: initial;
+    left: 25px;
+    bottom: 43px;
+    width: 46px;
+    height: 46px;
+    background-size: 17px auto;
+  }
+  .bsliderpart .nav-tabs .nav-link {
+    font-size: 12px;
+    width: 97px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .bsliderpart .tab-content {
+    height: 78px;
+  }
+  .bsliderpart .item h4 {
+    font-size: 12px;
+  }
+  .bsliderpart .item .imgbox {
+    padding: 10px 0;
+  }
+  .bsliderpart .item .imgbox img {
+    max-width: initial;
+    width: auto;
+    height: 60px;
+  }
+  .bsliderpart {
+    left: 15px;
+    bottom: 175px;
+  }
+  /*.bsliderpart #brands .item .imgbox {padding: 4px 22px;}*/
+  .mainbanner {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .bsliderpart .tab-content {
+    height: 60px;
+  }
+  .bsliderpart .item .imgbox img {
+    height: 40px;
+  }
+  .bsliderpart .item .imgbox:hover img {
+    transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+  }
+}
