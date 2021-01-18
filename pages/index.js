@@ -1,9 +1,8 @@
 import Head from "next/head";
-import Header from "../components/header/Header";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SearchBar from "@components/searchbar/SearchBar";
-import Tabmenu from "@components/tabmenu/Tabmenu";
+
+import HomePage from "./HomePage";
 
 export default function Home() {
   return (
@@ -25,13 +24,7 @@ export default function Home() {
           crossorigin="anonymous"
         ></script>
       </Head>
-
-      <Header />
-      <section className="mainbanner">
-        <SearchBar />
-        <Tabmenu />
-      </section>
-      <div className="chatbtn"></div>
+      <HomePage />
     </div>
   );
 }
