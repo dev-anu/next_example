@@ -11,14 +11,27 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="../node_modules/owl.carousel/dist/assets/owl.carousel.css"
+        />
+        <link
+          rel="stylesheet"
+          href="../node_modules/owl.carousel/dist/assets/owl.theme.default.css"
+        />
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous"
+        ></script>
       </Head>
 
       <Header />
-      <section class="mainbanner">
+      <section className="mainbanner">
         <SearchBar />
         <Tabmenu />
       </section>
-      <div class="chatbtn"></div>
+      <div className="chatbtn"></div>
     </div>
   );
 }
